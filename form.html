@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/StyleForme.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper container">
+
+            <a href="./index.html" class="logo">
+                ReWallet
+            </a>
+
+            <button class="burger">
+                <img src="icons/menu.svg" alt="menu">
+            </button>
+
+            <nav class="navigation-blog">
+                <ul>
+                    <li>
+                        <a href="#Rewallet">
+                            Why Rewallet?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#howitworks">
+                            How does it work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#FAQ">
+                            FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#wallets">
+                            Wallets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="lang__start">
+                    <button class="lang">
+                        <img src="icons/lang.png" alt="language">
+                        English
+                    </button>
+
+                    <a href="#" class="start">
+                        Start now
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container reg">
+            <h1 class="sr-only">Form</h1>
+            <form action="//httpbin.org/post" method='post' name="regisration" class="regisration__form">
+                <fieldset class="form-content">
+                    <legend>Personal information</legend>
+                    <label for="name" class="name">
+                        <span>Name</span>
+                        <input type="text" name="name" id="name" placeholder="Ivan" required>
+                    </label>
+
+                    <Label class="gender">
+                        Gender
+                        <div>
+                            <span class="gender__choice">Male</span>
+                            <input type="radio" name="sex" id="gender" value="Male" checked> 
+                            <span class="gender__choice" for="genderf">Female</span>
+                            <input type="radio" name="sex" id="genderf" value="Female">
+                        </div>
+                    </Label>
+
+                    <label class="birthday">
+                        <span>Birthday</span>
+                        <input type="date" name="birthday" id="birthday" placeholder="01.01.2000" required>
+                    </label>
+
+                    <lable for="password" class="password">
+                        <span>Password</span>
+                        <input type="password" name="password" id="password" placeholder="Введите пароль" required>
+                        <label><input type="checkbox" class="password-checkbox">Показать пароль</label>
+                    </lable>
+
+                </fieldset>
+
+                <fieldset class="form-content">
+                    <legend>Contact information</legend>
+
+                    <label class="email">
+                        Email
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+
+
+
+                    <label class="tel">Telephone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="89999999999" disabled>
+
+                    <label for="daytime" class="daytime">
+                        <span>Convenient interval for communication</span>
+                        <select name="daytime" id="daytime">
+                            <option value="morning">morning</option>
+                            <option value="afternoon">afternoon</option>
+                            <option value="evening">evening</option>
+                            <option value="night">night</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <div class="buttons">
+                    <button type="submit" class="send">Отправить →</button>
+                    <button type="reset" class="reset">Сбросить</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container foot">
+            <h2 class="sr-only">FAQ</h2>
+            <div class="first">
+
+                <div class="logo_and_menu">
+                    <p class="footlogo">
+                        Rewallet
+                    </p>
+
+                    <ul class="footer-content">
+                        <li class="footc">
+                            <a class="footmenu" href="#Rewallet">
+                                Why Rewallet?
+                            </a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="#about">
+                                About us
+                            </a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="#howitworks">
+                                How does it work
+                            </a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="#FAQ">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="#wallets">
+                                Wallets
+                            </a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="#blog">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="grid.html">
+                                Картина Пита Мондриана
+                            </a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="">Imprint</a>
+                        </li>
+
+                        <li class="footc">
+                            <a class="footmenu" href="">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="trust__rait">
+                    <a href=""><img src="icons/trustpilot.svg" alt="trustpilot"></a>
+                    <div class="trustpilot">
+                        <ul>
+                            <li>
+                                <img src="icons/Icons.png" alt="raiting">
+                            </li>
+
+                            <li>
+                                <img src="icons/Icons.png" alt="raiting">
+                            </li>
+
+                            <li>
+                                <img src="icons/Icons.png" alt="raiting">
+                            </li>
+
+                            <li>
+                                <img src="icons/Icons.png" alt="raiting">
+                            </li>
+
+                            <li>
+                                <img src="icons/Icons.png" alt="raiting">
+                            </li>
+
+                        </ul>
+
+                        <div class="score">
+                            <p class="head3">
+                                4.9
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="last">
+                <div class="partners">
+                    <a href=""><img src="icons/german.png" alt="made in germany"></a>
+                    <a href=""><img src="icons/blockhainfoot.png" alt="blockchain bundesverband"></a>
+                </div>
+
+                <p class="grey">@ Copyright 2023 ReWallet</p>
+
+                <div class="soc">
+                    <a href=""><img src="icons/x.svg" alt="x"></a>
+                    <a href=""><img src="icons/in.svg" alt="in"></a>
+                    <a href=""><img src="icons/inst.svg" alt="instagramm"></a>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+</body>
+
+</html>
