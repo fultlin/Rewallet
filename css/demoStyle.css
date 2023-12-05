@@ -184,148 +184,127 @@ main {
   line-height: 1.875rem;
 }
 
-.regisration__form {
-  display: flex;
-  max-width: 70rem;
-  flex-wrap: wrap;
+.demo {
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.form-content {
-  font-size: 3rem;
-  padding: 3rem;
+.card {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+
+.town--1 {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    backface-visibility:hidden;
+}
+
+.town--2 {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    backface-visibility:hidden;
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);  
+}
+
+marquee {
+    width: 80rem;
+    height: 10rem;
+    background-color: rgb(56, 56, 56, 0.11);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+marquee img {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.square {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(20, 143, 224);
+    animation: square-around 1s infinite ease-in-out;
+    margin: 0 auto;
+}
+
+@keyframes square-around {
+    from {
+        transform: rotateZ(0);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.marq {
   display: flex;
   width: 100%;
-  max-width: 30rem;
-  justify-content: flex-start;
-  margin: 0 auto;
-}
-
-.form-content:nth-child(1) {
-  flex-direction: column;
-}
-
-.form-content:nth-child(2) {
-  flex-direction: column;
-}
-
-input:focus::placeholder {
-  transform: translateY(-10px);
-}
-
-.form-content {
-  border-radius: 3rem;
-  margin-bottom: 2rem;
-}
-
-.form-content legend {
-  margin-bottom: 1rem;
-  color: #667085;
-  max-width: max-content;
-}
-
-.name {
-  font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  max-width: max-content;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.gender {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
-
-.birthday {
-  font-size: 2.5rem;
-  max-width: max-content;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.password {
-  font-size: 2.5rem;
-  max-width: max-content;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.email {
-  font-size: 2.5rem;
-  max-width: max-content;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.tel {
-  max-width: max-content;
-  margin: 0 auto;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
-label {
-  max-width: max-content;
-}
-
-.daytime {
-  margin-top: 1rem;
-  display: flex;
-  max-width: 300px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1 auto;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.send,
-.reset {
-  padding: 1rem;
-  background-color: transparent;
-  border: 1px solid #1a1e42;
-  border-radius: 3rem;
-  text-align: center;
-  font-size: 1.6rem;
-}
-
-.buttons {
-  max-width: max-content;
-  margin: 0 auto;
-  margin-top: 1rem;
-  display: flex;
-  gap: 2rem;
-}
-
-.buttons button {
-  max-height: max-content;
-  cursor: pointer;
-}
-
-.send__img {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  height: 20rem;
+  max-width: 60rem;
   position: relative;
-  top: 0.5rem;
+  overflow-x: hidden;
+  align-items: center;
 }
+
+.marq--1 {
+  display: flex;
+  max-height: 10rem;
+  gap: 2rem;
+  animation: running-row-1 10s infinite linear;
+}
+
+
+.marq--2 {
+  display: flex;
+  max-height: 10rem;
+  gap: 2rem;
+  animation: running-row-2 10s 5s infinite linear;
+}
+
+
+@keyframes running-row-1 {
+  to {
+    transform: translateX(-120rem);
+  }
+}
+
+@keyframes running-row-2 {
+  to {
+    transform: translateX(-140rem);
+  }
+}
+
 
 .footer-content {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   gap: 2rem;
 }
+
+
+
+
 
 .first {
   display: flex;
@@ -383,8 +362,6 @@ label {
   font-size: 3rem;
   line-height: 1.875rem;
   max-width: max-content;
-  transform: rotate(-30deg) scale(150%) skewX(30deg) skewY(-30deg);
-  
 }
 
 .last {
@@ -397,12 +374,6 @@ label {
 .soc {
   display: none;
   gap: 2rem;
-}
-
-@media (max-width: 63.5rem) {
-  .regisration__form {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 814px) {
@@ -426,9 +397,6 @@ label {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .reg {
-    justify-content: center;
   }
 
   .wrapper {
