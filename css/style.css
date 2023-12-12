@@ -316,7 +316,7 @@ section {
 .list2 {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
@@ -1206,6 +1206,10 @@ details[open] summary::after {
   .first {
     max-width: max-content;
     margin: 0 auto;
+  }
+
+  .list2 {
+    gap: 2rem;
   }
 
   .process {
