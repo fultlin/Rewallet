@@ -35,6 +35,23 @@
   font-weight: 600;
 }
 
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 10px 15px;
+  color: #18191c;
+  background: #10F3AF;
+  transform: translateY(-100%);
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.skip-link:focus {
+  transform: translateY(20%);
+}
+
 a {
   text-decoration: none;
 }
